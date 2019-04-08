@@ -8,10 +8,10 @@ export function timeGroupedFrequencyDistributionParser(distribution) {
                 Object.keys(distribution[signalGroup][signalPhase][isWeekend]).forEach((hour) => {
                     let subtitle =signalPhase+ " hour: "+hour;
                     if(isWeekend === "1" ){
-                        subtitle+=" weekend";
+                        subtitle+=" on weekend";
                     }
                     else{
-                        subtitle+=" weekday";
+                        subtitle+=" on weekday";
                     }
                     output[signalGroup][subtitle] = [];
                     Object.keys(distribution[signalGroup][signalPhase][isWeekend][hour]).forEach((duration) => {
