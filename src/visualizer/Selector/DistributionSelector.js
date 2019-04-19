@@ -11,6 +11,9 @@ class DistributionSelector extends Component {
             frequencyDistribution: undefined,
             timeFrequencyDistribution: undefined,
             timeGroupedFrequencyDistribution: undefined,
+            onlineFrequencyDistribution: undefined,
+            onlineTimeFrequencyDistribution: undefined,
+            onlineTimeGroupedFrequencyDistribution: undefined,
         };
         this.setOption = this.setOption.bind(this);
     }
@@ -37,6 +40,27 @@ class DistributionSelector extends Component {
                     timeGroupedFrequencyDistribution: timeGroupedFrequencyDistributionParser(data)
                 });
             });
+        fetch("http://localhost:8080/distribution/fd")
+            .then(r => r.json())
+            .then(data => {
+                this.setState({
+                    onlineFrequencyDistribution: frequencyDistributionParser(data)
+                });
+            });
+        fetch("http://localhost:8080/distribution/tfd")
+            .then(r => r.json())
+            .then(data => {
+                this.setState({
+                    onlineTimeFrequencyDistribution: timeFrequencyDistributionParser(data)
+                });
+            });
+        fetch("http://localhost:8080/distribution/tgfd")
+            .then(r => r.json())
+            .then(data => {
+                this.setState({
+                    onlineTimeGroupedFrequencyDistribution: timeGroupedFrequencyDistributionParser(data)
+                });
+            });
     }
 
     setOption(option){
@@ -46,17 +70,19 @@ class DistributionSelector extends Component {
     }
 
     render() {
-        let {option, frequencyDistribution, timeFrequencyDistribution, timeGroupedFrequencyDistribution} = this.state;
-        let data;
-        if(option === "frequencyDistribution"){
-            data = frequencyDistribution;
-        }
-        else if(option === "timeGroupedFrequencyDistribution"){
-            data = timeGroupedFrequencyDistribution;
-        }
-        else if(option === "timeFrequencyDistribution"){
-            data = timeFrequencyDistribution;
-        }
+        // let {option, frequencyDistribution, timeFrequencyDistribution, timeGroupedFrequencyDistribution} = this.state;
+        // let data;
+        // if(option === "frequencyDistribution"){
+        //     data = frequencyDistribution;
+        // }
+        // else if(option === "timeGroupedFrequencyDistribution"){
+        //     data = timeGroupedFrequencyDistribution;
+        // }
+        // else if(option === "timeFrequencyDistribution"){
+        //     data = timeFrequencyDistribution;
+        // }
+        let { option } = this.state;
+        let data = this.state[option];
         console.log(data);
         if(!data){
             return (

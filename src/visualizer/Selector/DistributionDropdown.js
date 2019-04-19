@@ -12,18 +12,33 @@ class DistributionDropdown extends Component{
     options = [
         {
             key: 'frequencyDistribution',
-            text: 'Dataset not grouped in time',
+            text: 'Local: Dataset not grouped in time',
             value: 0
         },
         {
             key: 'timeGroupedFrequencyDistribution',
-            text: 'Dataset grouped by weekend of weekday and hours',
+            text: 'Local: Dataset grouped by weekend of weekday and hours',
             value: 1
         },
         {
             key: 'timeFrequencyDistribution',
-            text: 'Dataset grouped every 20 minutes',
+            text: 'Local: Dataset grouped every 20 minutes',
             value: 2
+        },
+        {
+            key: 'onlineFrequencyDistribution',
+            text: 'Online: Dataset not grouped in time',
+            value: 3
+        },
+        {
+            key: 'onlineTimeGroupedFrequencyDistribution',
+            text: 'Online: Dataset grouped by weekend of weekday and hours',
+            value: 4
+        },
+        {
+            key: 'onlineTimeFrequencyDistribution',
+            text: 'Online: Dataset grouped every 20 minutes',
+            value: 5
         }
     ];
 
@@ -39,6 +54,9 @@ class DistributionDropdown extends Component{
                 <option value={this.options[0].key}>{this.options[0].text}</option>
                 <option value={this.options[1].key}>{this.options[1].text}</option>
                 <option value={this.options[2].key}>{this.options[2].text}</option>
+                <option value={this.options[3].key}>{this.options[3].text}</option>
+                <option value={this.options[4].key}>{this.options[4].text}</option>
+                <option value={this.options[5].key}>{this.options[5].text}</option>
             </select>
         );
     }
