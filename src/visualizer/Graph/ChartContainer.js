@@ -7,7 +7,7 @@ class ChartContainer extends Component {
         let {data} = this.props;
         return (
             <div className="ChartContainer ">
-                {Object.keys(data).map((title) => {return Object.keys(data[title]).map((subtitle) =>{
+                {Object.keys(data).sort().map((title) => {return Object.keys(data[title]).sort().map((subtitle) =>{
                     return <BarChart data={data[title][subtitle]} title={title+" "+subtitle}/>
                 })}
                 )}
