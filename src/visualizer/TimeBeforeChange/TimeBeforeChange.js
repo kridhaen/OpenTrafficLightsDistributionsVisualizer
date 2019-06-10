@@ -37,9 +37,9 @@ export default class TimeBeforeChange extends Component{
                         return Object.keys(data[signalGroup]).map((signalPhase) => {
                             return Object.keys(data[signalGroup][signalPhase]).map((distributionType) => {
                                 return Object.keys(data[signalGroup][signalPhase][distributionType]).map((predictionType) => {
-                                    if(distributionType !== "tfd" || predictionType !== "median"){
-                                        return null;
-                                    }
+                                    // if(distributionType !== "tfd" || predictionType !== "median"){
+                                    //     return null;
+                                    // }
                                     if( !data[signalGroup][signalPhase][distributionType][predictionType].abs_e_result_time_list){
                                         return null;
                                     }

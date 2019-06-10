@@ -44,30 +44,30 @@ class DistributionSelector extends Component {
                     timeGroupedFrequencyDistribution: {normal: parsed, cumulative: this.transformData(parsed)}
                 });
             });
-        fetch("http://localhost:8080/distribution/fd")
-            .then(r => r.json())
-            .then(data => {
-                let parsed = frequencyDistributionParser(data);
-                this.setState({
-                    onlineFrequencyDistribution: {normal: parsed, cumulative: this.transformData(parsed)}
-                });
-            });
-        fetch("http://localhost:8080/distribution/tfd")
-            .then(r => r.json())
-            .then(data => {
-                let parsed = timeFrequencyDistributionParser(data);
-                this.setState({
-                    onlineTimeFrequencyDistribution: {normal: parsed, cumulative: this.transformData(parsed)}
-                });
-            });
-        fetch("http://localhost:8080/distribution/tgfd")
-            .then(r => r.json())
-            .then(data => {
-                let parsed = timeGroupedFrequencyDistributionParser(data);
-                this.setState({
-                    onlineTimeGroupedFrequencyDistribution: {normal: parsed, cumulative: this.transformData(parsed)}
-                });
-            });
+        // fetch("http://localhost:8080/distribution/fd")
+        //     .then(r => r.json())
+        //     .then(data => {
+        //         let parsed = frequencyDistributionParser(data);
+        //         this.setState({
+        //             onlineFrequencyDistribution: {normal: parsed, cumulative: this.transformData(parsed)}
+        //         });
+        //     });
+        // fetch("http://localhost:8080/distribution/tfd")
+        //     .then(r => r.json())
+        //     .then(data => {
+        //         let parsed = timeFrequencyDistributionParser(data);
+        //         this.setState({
+        //             onlineTimeFrequencyDistribution: {normal: parsed, cumulative: this.transformData(parsed)}
+        //         });
+        //     });
+        // fetch("http://localhost:8080/distribution/tgfd")
+        //     .then(r => r.json())
+        //     .then(data => {
+        //         let parsed = timeGroupedFrequencyDistributionParser(data);
+        //         this.setState({
+        //             onlineTimeGroupedFrequencyDistribution: {normal: parsed, cumulative: this.transformData(parsed)}
+        //         });
+        //     });
     }
 
     setOption(option){
