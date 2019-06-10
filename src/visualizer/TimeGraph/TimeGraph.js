@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import '../../../node_modules/react-vis/dist/style.css';
-import {XYPlot, VerticalBarSeries, LineSeries, LineMarkSeries, HorizontalGridLines, XAxis, YAxis} from 'react-vis';
-import {timeFrequencyDistributionParser} from "../Selector/Parser";
-import BarChart from "../Graph/BarChart";
+import {XYPlot, LineMarkSeries, HorizontalGridLines, XAxis, YAxis} from 'react-vis';
 
 export default class TimeGraph extends Component{
     constructor(props){
