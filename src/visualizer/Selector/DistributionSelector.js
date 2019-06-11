@@ -20,7 +20,7 @@ class DistributionSelector extends Component {
     }
 
     componentDidMount(){
-        fetch("/Data/frequencyDistribution.json")
+        fetch(process.env.PUBLIC_URL + "/Data/frequencyDistribution.json")
             .then(r => r.json())
             .then(data => {
                 let parsed = frequencyDistributionParser(data);
@@ -28,7 +28,7 @@ class DistributionSelector extends Component {
                     frequencyDistribution: {normal: parsed, cumulative: this.transformData(parsed)}
                 });
             });
-        fetch("/Data/timeFrequencyDistribution.json")
+        fetch(process.env.PUBLIC_URL + "/Data/timeFrequencyDistribution.json")
             .then(r => r.json())
             .then(data => {
                 let parsed = timeFrequencyDistributionParser(data);
@@ -36,7 +36,7 @@ class DistributionSelector extends Component {
                     timeFrequencyDistribution: {normal: parsed, cumulative: this.transformData(parsed)}
                 });
             });
-        fetch("/Data/timeGroupedFrequencyDistribution.json")
+        fetch(process.env.PUBLIC_URL + "/Data/timeGroupedFrequencyDistribution.json")
             .then(r => r.json())
             .then(data => {
                 let parsed = timeGroupedFrequencyDistributionParser(data);

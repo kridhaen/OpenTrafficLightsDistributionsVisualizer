@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import '../../../node_modules/react-vis/dist/style.css';
-import {XYPlot, VerticalBarSeries, LineSeries, LineMarkSeries, HorizontalGridLines, XAxis, YAxis} from 'react-vis';
-import {timeFrequencyDistributionParser} from "../Selector/Parser";
-import BarChart from "../Graph/BarChart";
+import {XYPlot, LineMarkSeries, HorizontalGridLines, XAxis, YAxis} from 'react-vis';
 
 export default class TimeGraph extends Component{
     constructor(props){
@@ -16,7 +14,7 @@ export default class TimeGraph extends Component{
     }
 
     componentDidMount() {
-        fetch("/Data/durations_latest.json") //optionally fetch "http://localhost:8081/durations" if local OpenTrafficLightsPrediction server is running TestSuite ShowPhaseDurationOverTime
+        fetch(process.env.PUBLIC_URL + "/Data/durations_latest.json") //optionally fetch "http://localhost:8081/durations" if local OpenTrafficLightsPrediction server is running TestSuite ShowPhaseDurationOverTime
             .then(r => r.json())
             .then(data => {
                 let result = {};
