@@ -12,7 +12,7 @@ export default class TimeBeforeChange extends Component{
     }
 
     componentDidMount() {
-        fetch("/Data/full_previous_testsuite_run.json") //optionally fetch "http://localhost:8080/analytics" if local OpenTrafficLightsPrediction server is running TestSuite
+        fetch(process.env.PUBLIC_URL + "/Data/full_previous_testsuite_run.json") //optionally fetch "http://localhost:8080/analytics" if local OpenTrafficLightsPrediction server is running TestSuite
             .then(r => r.json())
             .then(data => {
                 this.setState({

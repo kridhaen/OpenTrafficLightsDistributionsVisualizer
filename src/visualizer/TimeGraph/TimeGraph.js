@@ -14,7 +14,7 @@ export default class TimeGraph extends Component{
     }
 
     componentDidMount() {
-        fetch("/Data/durations_latest.json") //optionally fetch "http://localhost:8081/durations" if local OpenTrafficLightsPrediction server is running TestSuite ShowPhaseDurationOverTime
+        fetch(process.env.PUBLIC_URL + "/Data/durations_latest.json") //optionally fetch "http://localhost:8081/durations" if local OpenTrafficLightsPrediction server is running TestSuite ShowPhaseDurationOverTime
             .then(r => r.json())
             .then(data => {
                 let result = {};
