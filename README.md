@@ -1,3 +1,9 @@
+Visualize data from https://github.com/kridhaen/OpenTrafficLightsPrediction/.
+
+Change src/visualizer/TimeGraph for the graph with durations over time.
+Change src/visualizer/Selector/DistributionDropdown and DistributionSelector for the distributions.
+Change src/TimeBeforeChange/TimeBeforeChange for the graphs that show the error of the predictions and the time before a phase change
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
