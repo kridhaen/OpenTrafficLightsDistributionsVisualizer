@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/OpenTrafficLightsDistributionsVisualizer/precache-manifest.cee66e33521d2c0ba41039d647f872a3.js"
+  "/OpenTrafficLightsDistributionsVisualizer/precache-manifest.dff3e1dac41abb0c45ae4f5ec120804b.js"
 );
 
 workbox.clientsClaim();

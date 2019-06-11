@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/OpenTrafficLightsDistributionsVisualizer/static/js/runtime~main.20d8adf7.js"
   },
   {
-    "revision": "ecc1d595d5048716e2e8",
-    "url": "/OpenTrafficLightsDistributionsVisualizer/static/js/main.43ff56da.chunk.js"
+    "revision": "73f8c89ed655d86f1031",
+    "url": "/OpenTrafficLightsDistributionsVisualizer/static/js/main.b4dcab82.chunk.js"
   },
   {
     "revision": "79a27104953cc90594c5",
     "url": "/OpenTrafficLightsDistributionsVisualizer/static/js/2.5fbfac0b.chunk.js"
   },
   {
-    "revision": "ecc1d595d5048716e2e8",
+    "revision": "73f8c89ed655d86f1031",
     "url": "/OpenTrafficLightsDistributionsVisualizer/static/css/main.b5c916e8.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/OpenTrafficLightsDistributionsVisualizer/static/css/2.2781913c.chunk.css"
   },
   {
-    "revision": "0467fd3c4f0938fe62c3ecbbcc748a35",
+    "revision": "0e7f4e961491be8b393788c5c7afdc66",
     "url": "/OpenTrafficLightsDistributionsVisualizer/index.html"
   }
 ];

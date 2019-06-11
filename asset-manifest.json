@@ -1,14 +1,14 @@
 {
   "main.css": "/OpenTrafficLightsDistributionsVisualizer/static/css/main.b5c916e8.chunk.css",
-  "main.js": "/OpenTrafficLightsDistributionsVisualizer/static/js/main.43ff56da.chunk.js",
-  "main.js.map": "/OpenTrafficLightsDistributionsVisualizer/static/js/main.43ff56da.chunk.js.map",
+  "main.js": "/OpenTrafficLightsDistributionsVisualizer/static/js/main.b4dcab82.chunk.js",
+  "main.js.map": "/OpenTrafficLightsDistributionsVisualizer/static/js/main.b4dcab82.chunk.js.map",
   "runtime~main.js": "/OpenTrafficLightsDistributionsVisualizer/static/js/runtime~main.20d8adf7.js",
   "runtime~main.js.map": "/OpenTrafficLightsDistributionsVisualizer/static/js/runtime~main.20d8adf7.js.map",
   "static/css/2.2781913c.chunk.css": "/OpenTrafficLightsDistributionsVisualizer/static/css/2.2781913c.chunk.css",
   "static/js/2.5fbfac0b.chunk.js": "/OpenTrafficLightsDistributionsVisualizer/static/js/2.5fbfac0b.chunk.js",
   "static/js/2.5fbfac0b.chunk.js.map": "/OpenTrafficLightsDistributionsVisualizer/static/js/2.5fbfac0b.chunk.js.map",
   "index.html": "/OpenTrafficLightsDistributionsVisualizer/index.html",
-  "precache-manifest.cee66e33521d2c0ba41039d647f872a3.js": "/OpenTrafficLightsDistributionsVisualizer/precache-manifest.cee66e33521d2c0ba41039d647f872a3.js",
+  "precache-manifest.dff3e1dac41abb0c45ae4f5ec120804b.js": "/OpenTrafficLightsDistributionsVisualizer/precache-manifest.dff3e1dac41abb0c45ae4f5ec120804b.js",
   "service-worker.js": "/OpenTrafficLightsDistributionsVisualizer/service-worker.js",
   "static/css/2.2781913c.chunk.css.map": "/OpenTrafficLightsDistributionsVisualizer/static/css/2.2781913c.chunk.css.map",
   "static/css/main.b5c916e8.chunk.css.map": "/OpenTrafficLightsDistributionsVisualizer/static/css/main.b5c916e8.chunk.css.map"
